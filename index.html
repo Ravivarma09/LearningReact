@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning React</title>
+</head>
+<body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  
+ <div id="root">
+    <h1>Statement from html Syntax</h1>
+ </div>
+
+ <script>
+ /* adding html element through javascript*/
+  const heading = document.createElement("h1")
+  heading.innerHTML = "Statement from javascipt Code"
+  const root = document.getElementById("root")
+  root.appendChild(heading) 
+
+  /* Creating html element through javascript*/
+
+ const Paragraph = document.createElement("P")
+ Paragraph.innerHTML ="Writing some Random stuff , which helps to recheck the folder"
+ const root1 = document.createElement("div")
+ document.body.appendChild(root1)
+ root1.appendChild(Paragraph)
+
+
+ </script>
+
+ <script src ="./App.js"></script>
+ <link rel ="stylesheet" href="./Style.css"/>
+</body>
+</html>
